@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Erfeng's home</title>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+		<link rel="stylesheet" href="css/gamehouse.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<style>
+			#GameHouse {
+				padding-top: 100px;
+				background-color: #050801;
+			}
+			
+			#GameHouse .inner-width {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				text-align: center;
+			}
+			
+			#GameHouse .content {
+				width: 100%;
+				color: #fff;
+				height: 600px;
+			}
+			
+			#GameHouse .content .content-p {
+				height: 80px;
+				line-height: 80px;
+			}
+			
+			#GameHouse .p-span {
+				float: left;
+				/*font-size: 30px;*/
+				color: #fff;
+				font-size: 25px;
+				font-weight: 500;
+				transition: .2s linear;
+			}
+			
+			#GameHouse .a1 {
+				float: right;
+				width: 100px;
+				height: 40px;
+				line-height: 40px;
+				margin-top: 20px;
+				color: #48dbfb;
+				font-size: 15px;
+				font-weight: 500;
+				border: 1px solid #48dbfb;
+				border-radius: 6px;
+				transition: .2s linear;
+			}
+			
+			#GameHouse .movie {
+				float: left;
+				width: 700px;
+				height: 400px;
+				object-fit: fill;
+			}
+			
+			#GameHouse .a2 {
+				float: left;
+				clear: both;
+				width: 150px;
+				height: 40px;
+				line-height: 40px;
+				margin-top: 40px;
+				display: inline-block;
+				color: #48dbfb;
+				font-size: 15px;
+				font-weight: 500;
+				border: 1px solid #48dbfb;
+				border-radius: 6px;
+				transition: .2s linear;
+			}
+			
+			#GameHouse .a3 {
+				float: left;
+				width: 80px;
+				height: 40px;
+				line-height: 40px;
+				margin-top: 40px;
+				margin-left: 20px;
+				display: inline-block;
+				color: #48dbfb;
+				font-size: 15px;
+				font-weight: 500;
+				border: 1px solid #48dbfb;
+				border-radius: 6px;
+				transition: .2s linear;
+			}
+			
+			#GameHouse .a4 {
+				float: right;
+				width: 150px;
+				height: 40px;
+				line-height: 40px;
+				margin-top: 40px;
+				margin-left: 20px;
+				display: inline-block;
+				color: #48dbfb;
+				font-size: 15px;
+				font-weight: 500;
+				border: 1px solid #48dbfb;
+				border-radius: 6px;
+				transition: .2s linear;
+			}
+			
+			#GameHouse .descript {
+				float: right;
+				width: 500px;
+				height: 400px;
+			}
+			
+			#GameHouse img {
+				width: 500px;
+				height: 250px;
+			}
+			
+			#GameHouse .descript .descript-text {
+				text-align: left;
+				color: #fff;
+				font-size: 15px;
+				font-weight: 500;
+				transition: .2s linear;
+			}
+			
+			#GameHouse {
+				list-style: none;
+			}
+			
+			#GameHouse .descript li {
+				float: left;
+				clear: both;
+				color: #CCCCCC;
+				font-size: 13px;
+				margin-top: 10px;
+			}
+			
+			#GameHouse .descript a {
+				float: left;
+				margin-top: 10px;
+				margin-left: 100px;
+				color: #48dbfb;
+				font-size: 15px;
+				font-weight: 500;
+			}
+			
+			#GameHouse .descript .date-span {
+				float: left;
+				margin-top: 10px;
+				margin-left: 100px;
+				color: #fff;
+				font-size: 15px;
+				font-weight: 500;
+			}
+			
+			#GameHouse .sp:hover {
+				background: #03e9f4;
+				color: #050801;
+				box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4, 0 0 200px #03E9F4;
+			}
+			
+			#GameHouse .sp:nth-child(2) {
+				filter: hue-rotate(290deg);
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar">
+			<div class="inner-width">
+				<button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+				 <div class="navbar-menu">
+        	<a href="index.html">Home</a>
+        	<a href="index.html#about">About</a>
+        	<a href="index.html#article">Articles</a>
+        	<a href="project.html">Projects</a>
+        	<a href="gamehouse.html">GameHouse</a>
+        	<!--<a href="#">Contact</a>-->
+      </div>
+			</div>
+		</nav>
+
+		<!--GameHouse-->
+		<div id="GameHouse">
+			<div class="inner-width">
+				<div class="content">
+					<p class="content-p">
+						<span class="p-span">根与叶之径</span>
+						<a class="a1 sp" href="#">社区中心</a>
+					</p>
+					<video src="video/gyy.mp4" controls="controls" class="movie">
+						your browser does not support the video tag
+					</video>
+					<div class="descript">
+						<img src="images/game.png" />
+						<p class="descript-text">《根与叶之径》这个小游戏是一款2d跳跃类的开发地图类的解密游戏，美工由美院的大哥大姐帮忙画的，程序是咱们团队自己写的，希望大家喜欢。</p>
+						<li>最近评测</li>
+						<a href="#">好评如潮</a>
+						<li>全部评测</li>
+						<a href="#">好评如潮</a>
+						<li>发行日期</li>
+						<span class="date-span">2020年9月22日</span>
+						<li>开发团队</li>
+						<a href="#">ET2班(AK工作室)+美院的大哥大姐</a>
+					</div>
+					<a class="a2 sp" href="#">添加至您的愿望单</a>
+					<a id="gz" class="a3 sp" href="javascript:void(0);">关注</a>
+					<a class="a4 sp" href="#">查看您的队列</a>
+				</div>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1);margin: 0 auto;" width="88%" color=#CCCCCC SIZE=1>
+			<div class="inner-width">
+				<div class="content">
+					<p class="content-p">
+						<span class="p-span">方块大作战</span>
+						<a class="a1 sp" href="#">社区中心</a>
+					</p>
+					<video src="video/gyy.mp4" controls="controls" class="movie">
+						your browser does not support the video tag
+					</video>
+					<div class="descript">
+						<img src="images/game.png" />
+						<p class="descript-text">《方块大作战》是一款射击类小游戏，方块的子弹不是无限的，吃多少子弹，就拥有多少子弹！....</p>
+						<li>最近评测</li>
+						<a href="#">好评如潮</a>
+						<li>全部评测</li>
+						<a href="#">好评如潮</a>
+						<li>发行日期</li>
+						<span class="date-span">2018年12月22日</span>
+						<li>开发团队</li>
+						<a href="#">ET2班(AK工作室)</a>
+					</div>
+					<a class="a2 sp" href="#">添加至您的愿望单</a>
+					<a class="a3 sp" href="#">关注</a>
+					<a class="a4 sp" href="#">查看您的队列</a>
+				</div>
+			</div>
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1);margin: 0 auto;" width="88%" color=#CCCCCC SIZE=1>
+			<div class="inner-width">
+				<div class="content">
+					<p class="content-p">
+						<span class="p-span">AK象棋</span>
+						<a class="a1 sp" href="#">社区中心</a>
+					</p>
+					<video src="video/gyy.mp4" controls="controls" class="movie">
+						your browser does not support the video tag
+					</video>
+					<div class="descript">
+						<img src="images/Akchesslogo.png" />
+						<p class="descript-text">AK象棋是一款棋牌类游戏，该项目还在开发中，预计将在明年4-5月份上线在微信小游戏上面，希望大家喜欢</p>
+						<li>最近评测</li>
+						<a href="#">好评如潮</a>
+						<li>全部评测</li>
+						<a href="#">好评如潮</a>
+						<li>发行日期</li>
+						<span class="date-span">2020年12月22日</span>
+						<li>开发团队</li>
+						<a href="#">ET2班(AK工作室)</a>
+					</div>
+					<a class="a2 sp" href="#">添加至您的愿望单</a>
+					<a class="a3 sp" id="guanzhu" href="#">关注</a>
+					<a class="a4 sp" href="#">查看您的队列</a>
+				</div>
+			</div>
+			
+			
+			<hr />
+  <div class="sm">
+    <a href="#" class="fab fa-qq"></a>
+    <a href="#" class="fab fa-twitter"></a>
+    <a href="#" class="fab fa-github"></a>
+    <a href="#" class="fab fa-whatsapp"></a>
+    <a href="#" class="fab fa-weixin"></a>
+  </div>
+  <div class="endTest">@AKTeam.com</div>
+		</div>
+
+		<!-- Services -->
+		
+ 
+	</body>
+	<script src="js/script.js">
+		$(function() {
+			$('#gz').click(function() {
+				alert('aa');
+				console.log('aaa')
+			})
+		})
+	</script>
+
+</html>
